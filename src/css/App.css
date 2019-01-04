@@ -1,0 +1,27 @@
+.header {
+    background-color: #00a1e0 !important;
+    height: 80px;
+}
+
+.profile-image {
+    height: 100px;
+    margin-top: 30px;
+}
+
+.app-title {
+    color: #00a1e0 !important;
+}
+
+.qn-box {
+    width: 100px;
+}
+
+
+.app-container {
+    padding-top: 110px;
+}
+
+#ask-btn {
+    background-color: #00a1e0;
+    color: #fff;
+}
