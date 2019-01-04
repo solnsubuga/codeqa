@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
-import Header from './components/Header';
-import QuestionForm from './components/QuestionForm';
+import { Header, QuestionForm, Questions } from './components';
 
 class App extends Component {
   render() {
@@ -9,7 +8,10 @@ class App extends Component {
       <div>
         <Header />
         <div className="container app-container">
-          <QuestionForm />
+          <div className="container">
+            <QuestionForm />
+            <Questions />
+          </div>
         </div>
       </div>
     );
