@@ -5,8 +5,16 @@ import Question from './Question';
 const Questions = props => (
   <div className="questions">
     <h1>Top Questions</h1>
-    <hr />
-    <Question />
+    <hr
+      style={{
+        border: 'none',
+        height: '4px',
+        backgroundColor: '#eee'
+      }}
+    />
+    {props.questions.map(qn => (
+      <Question key={qn.id} title={qn.title} asked={qn.asked} />
+    ))}
   </div>
 );
 

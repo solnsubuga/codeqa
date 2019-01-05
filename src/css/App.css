@@ -30,19 +30,25 @@
     margin-top: 100px;
 }
 
+.question {
+    margin-top: 10px;
+}
+
 .question__profile {
     height: 100px;
 }
 
-.question__link {
-    text-decoration-style: none;
-    /* TODO: fix this it doesn't work */
+a {
+    text-decoration: none !important;
+    color: #00a1e0 !important;
 }
 
 .question__date {
     font-style: italic;
+    margin-top: 30px;
 }
 
 .question__title {
+    margin-top: 10px;
     margin-left: 30px;
 }
