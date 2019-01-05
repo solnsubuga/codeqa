@@ -1,5 +1,6 @@
 import React from 'react';
 import Proptypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 import QuestionProfile from '../images/question-profile.png';
 
@@ -12,9 +13,13 @@ const Question = props => (
         alt=""
       />
       <div className="question__title">
-        <a className="question__link" href="/">
+        <Link
+          className="question__link"
+          to={`question/${props.id}`}
+          href={`question/${props.id}`}
+        >
           {props.title}
-        </a>
+        </Link>
         <p className="question__date float-right">{props.asked} </p>
       </div>
     </div>
@@ -24,6 +29,7 @@ const Question = props => (
 
 Question.propTypes = {
   title: Proptypes.string.isRequired,
-  asked: Proptypes.string.isRequired
+  asked: Proptypes.string.isRequired,
+  id: Proptypes.number.isRequired
 };
 export default Question;

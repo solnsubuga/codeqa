@@ -13,7 +13,7 @@ const Questions = props => (
       }}
     />
     {props.questions.map(qn => (
-      <Question key={qn.id} title={qn.title} asked={qn.asked} />
+      <Question id={qn.id} key={qn.id} title={qn.title} asked={qn.asked} />
     ))}
   </div>
 );

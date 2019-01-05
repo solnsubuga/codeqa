@@ -1,50 +1,16 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-import { Header, QuestionForm, Questions } from './components';
+import { BrowserRouter, Route } from 'react-router-dom';
 
-class App extends Component {
-  state = {
-    questions: [
-      {
-        title: 'Can I use ES2016 features yet in the browser?',
-        id: 1,
-        asked: 'Asked Jan, 4th 2019'
-      },
-      {
-        title: 'How does someone learn Javascript?',
-        id: 2,
-        asked: 'Asked Jan, 5th 2019'
-      }
-    ]
-  };
+import { Home, SingleQuestion } from './components';
 
-  handleAddQuestion = qn => {
-    this.setState(prevState => ({
-      questions: [
-        {
-          title: qn,
-          id: Math.random(),
-          asked: 'Asked Jan, 5th 2019'
-        },
-        ...prevState.questions
-      ]
-    }));
-  };
-
-  render() {
-    const { questions } = this.state;
-    return (
-      <div>
-        <Header />
-        <div className="container app-container">
-          <div className="container">
-            <QuestionForm handleAddQuestion={this.handleAddQuestion} />
-            <Questions questions={questions} />
-          </div>
-        </div>
-      </div>
-    );
-  }
-}
+const App = () => (
+  <BrowserRouter>
+    <div>
+      <Route exact path="/" component={Home} />
+      <Route exact path="/question/:id" component={SingleQuestion} />
+    </div>
+  </BrowserRouter>
+);
 
 export default App;
