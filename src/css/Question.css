@@ -1,0 +1,36 @@
+
+#ans-row {
+    width:70%;
+    margin:0 auto;
+    margin-right: 50px;
+} 
+
+.line{
+    width:70%;
+    margin:0 auto;
+    background:red;
+    box-shadow: #00a1e0;
+}
+
+p{
+    float: right;
+    font-size: 15px;
+    margin-left: 180px;
+    
+}
+
+.ans-line{
+    width:70%;
+    margin:0 auto;
+    background-color: antiquewhite;
+    box-shadow: #00a1e0;
+
+}
+
+.form-group{
+    font-size: 20px;
+    padding-left: 215px;
+    padding-right: 215px;
+
+
+}
