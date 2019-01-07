@@ -52,3 +52,18 @@ a {
     margin-top: 10px;
     margin-left: 30px;
 }
+
+.btn-login:hover {
+    background-color: #00a1e0;
+    color: #fff;
+
+}
+
+.btn-login {
+    background-color: #00a1e0;
+    color: #fff;
+}
+
+.has-error {
+    color: red;
+}
